@@ -21,7 +21,7 @@ const Index = () => {
           <nav className="flex items-center justify-between">
             <Link to="/" className="flex items-center gap-6 animate-fade-in">
               <img 
-                src="https://cdn.poehali.dev/projects/9193e91d-2324-4ed7-b25c-b0fab5d887e7/files/27bd226f-7995-4cf2-979c-79be390d3254.jpg" 
+                src="https://cdn.poehali.dev/files/942a20c3-aa82-4fd6-ab72-0d07f7644ce0.png" 
                 alt="TenderEx Logo" 
                 className="w-16 h-16 object-contain animate-float"
               />

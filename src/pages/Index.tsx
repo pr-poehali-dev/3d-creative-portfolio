@@ -139,10 +139,10 @@ const Index = () => {
                 <Icon name="Send" size={20} />
                 Отправить заявку
               </a>
-              <button className="px-8 py-4 bg-transparent border-2 border-accent text-accent font-bold rounded-lg hover:bg-accent/10 hover:scale-105 transition-all duration-300 flex items-center gap-3">
-                <Icon name="Phone" size={20} />
-                +7 (999) 123-45-67
-              </button>
+              <a href="https://t.me/TG_addG" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-transparent border-2 border-accent text-accent font-bold rounded-lg hover:bg-accent/10 hover:scale-105 transition-all duration-300 flex items-center gap-3">
+                <Icon name="Send" size={20} />
+                Telegram
+              </a>
             </div>
           </section>
         </main>

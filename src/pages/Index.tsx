@@ -1,11 +1,173 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState } from 'react';
+import Icon from '@/components/ui/icon';
 
 const Index = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4 color-black text-black">Добро пожаловать!</h1>
-        <p className="text-xl text-gray-600">тут будет отображаться ваш проект</p>
+    <div className="min-h-screen bg-gradient-to-b from-[#0F1419] via-[#1a1f2e] to-[#0F1419] text-foreground overflow-hidden">
+      <div className="grid-pattern fixed inset-0 opacity-20" />
+      
+      <div className="relative z-10">
+        <header className="container mx-auto px-6 py-8">
+          <nav className="flex items-center justify-between">
+            <div className="flex items-center gap-6 animate-fade-in">
+              <img 
+                src="https://cdn.poehali.dev/projects/9193e91d-2324-4ed7-b25c-b0fab5d887e7/files/27bd226f-7995-4cf2-979c-79be390d3254.jpg" 
+                alt="3D Studio Logo" 
+                className="w-16 h-16 object-contain animate-float"
+              />
+              <div>
+                <h1 className="text-3xl md:text-4xl font-bold glow-cyan bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+                  PIXEL FORGE STUDIO
+                </h1>
+                <p className="text-sm md:text-base text-muted-foreground mt-1">
+                  Creating Next-Gen 3D Experiences
+                </p>
+              </div>
+            </div>
+            
+            <button className="group relative px-6 py-3 overflow-hidden bg-primary/10 border border-primary/30 rounded-lg hover:border-primary transition-all duration-300">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300" />
+              <span className="relative flex items-center gap-2 text-primary font-semibold">
+                <Icon name="Mail" size={18} />
+                Связаться
+              </span>
+            </button>
+          </nav>
+        </header>
+
+        <main className="container mx-auto px-6 py-16">
+          <section className="mb-20 text-center animate-fade-in">
+            <div className="inline-block mb-4">
+              <span className="px-4 py-2 bg-primary/10 border border-primary/30 rounded-full text-sm font-medium text-primary">
+                ✨ Unreal Engine 5 | Blender | Cinema 4D
+              </span>
+            </div>
+            <h2 className="text-5xl md:text-7xl font-bold mb-6 glow-purple bg-gradient-to-r from-secondary via-accent to-primary bg-clip-text text-transparent leading-tight">
+              Мы создаём<br />
+              невозможное
+            </h2>
+            <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
+              Фотореалистичные 3D креативы для брендов, которые хотят выделиться
+            </p>
+          </section>
+
+          <section className="mb-20">
+            <div className="relative group">
+              <div className="absolute -inset-1 bg-gradient-to-r from-primary via-secondary to-accent rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-500 animate-glow-pulse" />
+              
+              <div className="relative bg-card border border-primary/20 rounded-2xl overflow-hidden">
+                <div className="aspect-video bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="mb-6">
+                      <div className="inline-flex items-center justify-center w-24 h-24 rounded-full bg-primary/10 border-2 border-primary/30 hover:border-primary hover:scale-110 transition-all duration-300 cursor-pointer group">
+                        <Icon name="Play" size={36} className="text-primary ml-1 group-hover:scale-125 transition-transform" />
+                      </div>
+                    </div>
+                    <h3 className="text-2xl font-bold mb-2 glow-cyan text-primary">
+                      Наше Портфолио
+                    </h3>
+                    <p className="text-muted-foreground">
+                      Загрузите ваше видео, чтобы продемонстрировать проекты
+                    </p>
+                    <div className="mt-6 flex flex-wrap gap-4 justify-center">
+                      <button className="px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(0,217,255,0.5)]">
+                        Загрузить видео
+                      </button>
+                      <button className="px-6 py-3 bg-secondary/10 border border-secondary text-secondary font-semibold rounded-lg hover:bg-secondary/20 transition-all duration-300 hover:scale-105">
+                        Вставить ссылку YouTube
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="grid md:grid-cols-3 gap-8 mb-20">
+            {[
+              {
+                icon: 'Sparkles',
+                title: 'Фотореализм',
+                description: 'Создаём визуалы, неотличимые от реальности',
+                color: 'primary'
+              },
+              {
+                icon: 'Zap',
+                title: 'Быстрый рендер',
+                description: 'Используем мощности RTX 4090 для скорости',
+                color: 'secondary'
+              },
+              {
+                icon: 'Layers',
+                title: 'Любая сложность',
+                description: 'От продуктов до архитектурных визуализаций',
+                color: 'accent'
+              }
+            ].map((feature, idx) => (
+              <div 
+                key={idx}
+                className="group relative p-8 bg-card/50 backdrop-blur-sm border border-primary/10 rounded-xl hover:border-primary/30 transition-all duration-300 hover:scale-105 animate-fade-in"
+                style={{ animationDelay: `${idx * 0.1}s` }}
+              >
+                <div className={`absolute -inset-0.5 bg-gradient-to-r from-${feature.color}/20 to-${feature.color}/0 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur`} />
+                <div className="relative">
+                  <div className={`inline-flex p-4 bg-${feature.color}/10 rounded-lg mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                    <Icon name={feature.icon as any} size={28} className={`text-${feature.color}`} />
+                  </div>
+                  <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
+                  <p className="text-muted-foreground">{feature.description}</p>
+                </div>
+              </div>
+            ))}
+          </section>
+
+          <section className="text-center py-16 bg-gradient-to-r from-primary/5 via-secondary/5 to-accent/5 rounded-2xl border border-primary/20">
+            <h3 className="text-3xl md:text-4xl font-bold mb-4 glow-magenta bg-gradient-to-r from-accent via-secondary to-primary bg-clip-text text-transparent">
+              Готовы создать что-то удивительное?
+            </h3>
+            <p className="text-xl text-muted-foreground mb-8">
+              Напишите нам, и мы обсудим ваш проект
+            </p>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <button className="group px-8 py-4 bg-gradient-to-r from-primary to-secondary text-background font-bold rounded-lg hover:scale-105 transition-all duration-300 hover:shadow-[0_0_40px_rgba(0,217,255,0.6)] flex items-center gap-3">
+                <Icon name="Send" size={20} />
+                Отправить заявку
+              </button>
+              <button className="px-8 py-4 bg-transparent border-2 border-accent text-accent font-bold rounded-lg hover:bg-accent/10 hover:scale-105 transition-all duration-300 flex items-center gap-3">
+                <Icon name="Phone" size={20} />
+                +7 (999) 123-45-67
+              </button>
+            </div>
+          </section>
+        </main>
+
+        <footer className="container mx-auto px-6 py-12 mt-20 border-t border-primary/10">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+            <div className="flex items-center gap-3">
+              <img 
+                src="https://cdn.poehali.dev/projects/9193e91d-2324-4ed7-b25c-b0fab5d887e7/files/27bd226f-7995-4cf2-979c-79be390d3254.jpg" 
+                alt="Logo" 
+                className="w-10 h-10 object-contain"
+              />
+              <span className="text-sm text-muted-foreground">
+                © 2024 Pixel Forge Studio. Все права защищены.
+              </span>
+            </div>
+            <div className="flex gap-6">
+              {['Instagram', 'Linkedin', 'Youtube'].map((social) => (
+                <a 
+                  key={social}
+                  href="#"
+                  className="text-muted-foreground hover:text-primary transition-colors duration-300 hover:scale-110 transform"
+                >
+                  <Icon name={social as any} size={22} />
+                </a>
+              ))}
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
   );

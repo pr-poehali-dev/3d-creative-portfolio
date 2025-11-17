@@ -27,7 +27,7 @@ const Index = () => {
               />
               <div>
                 <h1 className="text-3xl md:text-4xl font-bold glow-cyan bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-                  TenderEx
+                  Tenderex
                 </h1>
                 <p className="text-sm md:text-base text-muted-foreground mt-1">
                   3D-креативы для мобильных игр

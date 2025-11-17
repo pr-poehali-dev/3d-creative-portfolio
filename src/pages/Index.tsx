@@ -22,7 +22,7 @@ const Index = () => {
             <Link to="/" className="flex items-center gap-6 animate-fade-in">
               <img
                 src="https://cdn.poehali.dev/files/942a20c3-aa82-4fd6-ab72-0d07f7644ce0.png"
-                alt="TenderEx Logo"
+                alt="Tenderex Logo"
                 className="w-16 h-16 object-contain animate-float"
               />
               <div>

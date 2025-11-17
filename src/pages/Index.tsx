@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Icon from '@/components/ui/icon';
 
 const Index = () => {
@@ -11,10 +12,10 @@ const Index = () => {
       <div className="relative z-10">
         <header className="container mx-auto px-6 py-8">
           <nav className="flex items-center justify-between">
-            <div className="flex items-center gap-6 animate-fade-in">
+            <Link to="/" className="flex items-center gap-6 animate-fade-in">
               <img 
                 src="https://cdn.poehali.dev/projects/9193e91d-2324-4ed7-b25c-b0fab5d887e7/files/27bd226f-7995-4cf2-979c-79be390d3254.jpg" 
-                alt="3D Studio Logo" 
+                alt="TenderEx Logo" 
                 className="w-16 h-16 object-contain animate-float"
               />
               <div>
@@ -25,15 +26,23 @@ const Index = () => {
                   3D-креативы для мобильных игр
                 </p>
               </div>
-            </div>
+            </Link>
             
-            <a href="mailto:adtenderex@gmail.com" className="group relative px-6 py-3 overflow-hidden bg-primary/10 border border-primary/30 rounded-lg hover:border-primary transition-all duration-300 inline-block">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300" />
-              <span className="relative flex items-center gap-2 text-primary font-semibold">
-                <Icon name="Mail" size={18} />
-                Связаться
-              </span>
-            </a>
+            <div className="flex items-center gap-6">
+              <Link to="/" className="text-primary font-semibold">
+                Главная
+              </Link>
+              <Link to="/about" className="text-muted-foreground hover:text-primary transition-colors">
+                О нас
+              </Link>
+              <a href="mailto:adtenderex@gmail.com" className="group relative px-6 py-3 overflow-hidden bg-primary/10 border border-primary/30 rounded-lg hover:border-primary transition-all duration-300 inline-block">
+                <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300" />
+                <span className="relative flex items-center gap-2 text-primary font-semibold">
+                  <Icon name="Mail" size={18} />
+                  Связаться
+                </span>
+              </a>
+            </div>
           </nav>
         </header>
 

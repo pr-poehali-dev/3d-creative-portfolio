@@ -167,15 +167,26 @@ const Index = () => {
               </span>
             </div>
             <div className="flex gap-6">
-              {['Instagram', 'Linkedin', 'Youtube'].map((social) => (
-                <a 
-                  key={social}
-                  href="#"
-                  className="text-muted-foreground hover:text-primary transition-colors duration-300 hover:scale-110 transform"
-                >
-                  <Icon name={social as any} size={22} />
-                </a>
-              ))}
+              <a 
+                href="#"
+                className="text-muted-foreground hover:text-primary transition-colors duration-300 hover:scale-110 transform"
+              >
+                <Icon name="Instagram" size={22} />
+              </a>
+              <a 
+                href="#"
+                className="text-muted-foreground hover:text-primary transition-colors duration-300 hover:scale-110 transform"
+              >
+                <Icon name="Linkedin" size={22} />
+              </a>
+              <a 
+                href="https://www.youtube.com/@Tender_EX"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors duration-300 hover:scale-110 transform"
+              >
+                <Icon name="Youtube" size={22} />
+              </a>
             </div>
           </div>
         </footer>

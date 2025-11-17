@@ -44,7 +44,7 @@ const Index = () => {
               невозможное
             </h2>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-12">
-              Фотореалистичные 3D креативы для мобильных игр
+              Мощные 3D креативы для мобильных игр
             </p>
           </section>
 

@@ -136,7 +136,7 @@ const Index = () => {
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <a href="mailto:adtenderex@gmail.com" className="group px-8 py-4 bg-gradient-to-r from-primary to-secondary text-background font-bold rounded-lg hover:scale-105 transition-all duration-300 hover:shadow-[0_0_40px_rgba(0,217,255,0.6)] flex items-center gap-3">
-                <Icon name="Send" size={20} />
+                <Icon name="Mail" size={20} />
                 Отправить заявку
               </a>
               <a href="https://t.me/TG_addG" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-transparent border-2 border-accent text-accent font-bold rounded-lg hover:bg-accent/10 hover:scale-105 transition-all duration-300 flex items-center gap-3">

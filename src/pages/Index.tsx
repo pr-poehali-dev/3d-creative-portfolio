@@ -19,10 +19,10 @@ const Index = () => {
               />
               <div>
                 <h1 className="text-3xl md:text-4xl font-bold glow-cyan bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-                  PIXEL FORGE STUDIO
+                  TenderEx
                 </h1>
                 <p className="text-sm md:text-base text-muted-foreground mt-1">
-                  Creating Next-Gen 3D Experiences
+                  3D-креативы для мобильных игр
                 </p>
               </div>
             </div>
@@ -39,17 +39,12 @@ const Index = () => {
 
         <main className="container mx-auto px-6 py-16">
           <section className="mb-20 text-center animate-fade-in">
-            <div className="inline-block mb-4">
-              <span className="px-4 py-2 bg-primary/10 border border-primary/30 rounded-full text-sm font-medium text-primary">
-                ✨ Unreal Engine 5 | Blender | Cinema 4D
-              </span>
-            </div>
             <h2 className="text-5xl md:text-7xl font-bold mb-6 glow-purple bg-gradient-to-r from-secondary via-accent to-primary bg-clip-text text-transparent leading-tight">
               Мы создаём<br />
               невозможное
             </h2>
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
-              Фотореалистичные 3D креативы для брендов, которые хотят выделиться
+            <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-12">
+              Фотореалистичные 3D креативы для мобильных игр
             </p>
           </section>
 
@@ -88,21 +83,21 @@ const Index = () => {
           <section className="grid md:grid-cols-3 gap-8 mb-20">
             {[
               {
-                icon: 'Sparkles',
-                title: 'Фотореализм',
-                description: 'Создаём визуалы, неотличимые от реальности',
+                icon: 'Trophy',
+                title: 'Высшая лига графики',
+                description: 'Полностью 3D-креативы, которые на 47% чаще привлекают внимание пользователей, чем статичная реклама.',
                 color: 'primary'
               },
               {
-                icon: 'Zap',
-                title: 'Быстрый рендер',
-                description: 'Используем мощности RTX 4090 для скорости',
+                icon: 'Target',
+                title: 'Фокус на конверсии',
+                description: 'Мы не просто делаем "красиво". Мы продумываем каждый кадр так, чтобы подчеркнуть геймплей и спровоцировать действие — установку.',
                 color: 'secondary'
               },
               {
-                icon: 'Layers',
-                title: 'Любая сложность',
-                description: 'От продуктов до архитектурных визуализаций',
+                icon: 'Gamepad2',
+                title: 'Под ключ для любых жанров',
+                description: 'От гиперказуала до сложных RPG. Мы глубоко погружаемся в механику вашей игры и находим самый убедительный визуальный язык.',
                 color: 'accent'
               }
             ].map((feature, idx) => (
@@ -152,7 +147,7 @@ const Index = () => {
                 className="w-10 h-10 object-contain"
               />
               <span className="text-sm text-muted-foreground">
-                © 2024 Pixel Forge Studio. Все права защищены.
+                © 2024 TenderEx. Все права защищены.
               </span>
             </div>
             <div className="flex gap-6">

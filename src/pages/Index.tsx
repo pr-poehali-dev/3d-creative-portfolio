@@ -4,6 +4,13 @@ import Icon from '@/components/ui/icon';
 
 const Index = () => {
   const [isPlaying, setIsPlaying] = useState(false);
+  const [showEmailPopup, setShowEmailPopup] = useState(false);
+
+  const handleEmailClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setShowEmailPopup(true);
+    setTimeout(() => setShowEmailPopup(false), 3000);
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#0F1419] via-[#1a1f2e] to-[#0F1419] text-foreground overflow-hidden">
@@ -35,13 +42,13 @@ const Index = () => {
               <Link to="/about" className="text-muted-foreground hover:text-primary transition-colors">
                 О нас
               </Link>
-              <a href="mailto:adtenderex@gmail.com" className="group relative px-6 py-3 overflow-hidden bg-primary/10 border border-primary/30 rounded-lg hover:border-primary transition-all duration-300 inline-block">
+              <button onClick={handleEmailClick} className="group relative px-6 py-3 overflow-hidden bg-primary/10 border border-primary/30 rounded-lg hover:border-primary transition-all duration-300 inline-block">
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300" />
                 <span className="relative flex items-center gap-2 text-primary font-semibold">
                   <Icon name="Mail" size={18} />
                   Связаться
                 </span>
-              </a>
+              </button>
             </div>
           </nav>
         </header>
@@ -135,10 +142,10 @@ const Index = () => {
               Напишите нам, и мы обсудим ваш проект
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
-              <a href="mailto:adtenderex@gmail.com" className="group px-8 py-4 bg-gradient-to-r from-primary to-secondary text-background font-bold rounded-lg hover:scale-105 transition-all duration-300 hover:shadow-[0_0_40px_rgba(0,217,255,0.6)] flex items-center gap-3">
+              <button onClick={handleEmailClick} className="group px-8 py-4 bg-gradient-to-r from-primary to-secondary text-background font-bold rounded-lg hover:scale-105 transition-all duration-300 hover:shadow-[0_0_40px_rgba(0,217,255,0.6)] flex items-center gap-3">
                 <Icon name="Mail" size={20} />
                 Отправить заявку
-              </a>
+              </button>
               <a href="https://t.me/TG_addG" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-transparent border-2 border-accent text-accent font-bold rounded-lg hover:bg-accent/10 hover:scale-105 transition-all duration-300 flex items-center gap-3">
                 <Icon name="Send" size={20} />
                 Telegram
@@ -173,6 +180,24 @@ const Index = () => {
           </div>
         </footer>
       </div>
+
+      {showEmailPopup && (
+        <div className="fixed bottom-8 right-8 z-50 animate-fade-in">
+          <div className="bg-gradient-to-r from-primary to-secondary p-6 rounded-lg shadow-2xl border border-primary/30 max-w-sm">
+            <div className="flex items-center gap-3 mb-3">
+              <Icon name="Mail" size={24} className="text-background" />
+              <h4 className="text-lg font-bold text-background">Наша почта</h4>
+            </div>
+            <p className="text-background/90 font-semibold text-lg">adtenderex@gmail.com</p>
+            <button 
+              onClick={() => setShowEmailPopup(false)}
+              className="mt-4 text-background/80 hover:text-background text-sm underline"
+            >
+              Закрыть
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

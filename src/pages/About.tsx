@@ -8,15 +8,15 @@ const About = () => {
 
       <div className="relative z-10">
         <header className="container mx-auto px-6 py-8">
-          <nav className="flex items-center justify-between">
-            <Link to="/" className="flex items-center gap-6 animate-fade-in">
+          <nav className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <Link to="/" className="flex items-center gap-3 md:gap-6 animate-fade-in">
               <img
                 src="https://cdn.poehali.dev/files/942a20c3-aa82-4fd6-ab72-0d07f7644ce0.png"
                 alt="TenderEx Logo"
-                className="w-16 h-16 object-contain animate-float"
+                className="w-12 h-12 md:w-16 md:h-16 object-contain animate-float"
               />
               <div>
-                <h1 className="text-3xl md:text-4xl font-bold glow-cyan bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+                <h1 className="text-2xl md:text-4xl font-bold glow-cyan bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
                   Tenderex
                 </h1>
                 <p className="text-sm md:text-base text-muted-foreground mt-1">
@@ -25,7 +25,7 @@ const About = () => {
               </div>
             </Link>
 
-            <div className="flex items-center gap-6">
+            <div className="flex items-center gap-3 md:gap-6 flex-wrap justify-center">
               <Link
                 to="/"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -37,11 +37,11 @@ const About = () => {
               </Link>
               <a
                 href="mailto:adtenderex@gmail.com"
-                className="group relative px-6 py-3 overflow-hidden bg-primary/10 border border-primary/30 rounded-lg hover:border-primary transition-all duration-300 inline-block"
+                className="group relative px-4 md:px-6 py-2 md:py-3 overflow-hidden bg-primary/10 border border-primary/30 rounded-lg hover:border-primary transition-all duration-300 inline-block"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300" />
-                <span className="relative flex items-center gap-2 text-primary font-semibold">
-                  <Icon name="Mail" size={18} />
+                <span className="relative flex items-center gap-2 text-primary font-semibold text-sm md:text-base">
+                  <Icon name="Mail" size={16} className="md:w-[18px] md:h-[18px]" />
                   Contact
                 </span>
               </a>

@@ -30,20 +30,20 @@ const Index = () => {
                   Tenderex
                 </h1>
                 <p className="text-sm md:text-base text-muted-foreground mt-1">
-                  3D-креативы для мобильных игр
+                  3D Creatives for Mobile Games
                 </p>
               </div>
             </Link>
 
             <div className="flex items-center gap-6">
               <Link to="/" className="text-primary font-semibold">
-                Главная
+                Home
               </Link>
               <Link
                 to="/about"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
-                О нас
+                About
               </Link>
               <button
                 onClick={handleEmailClick}
@@ -52,7 +52,7 @@ const Index = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300" />
                 <span className="relative flex items-center gap-2 text-primary font-semibold">
                   <Icon name="Mail" size={18} />
-                  Связаться
+                  Contact
                 </span>
               </button>
             </div>
@@ -62,12 +62,12 @@ const Index = () => {
         <main className="container mx-auto px-6 py-16">
           <section className="mb-20 text-center animate-fade-in">
             <h2 className="text-5xl md:text-7xl font-bold mb-6 glow-purple bg-gradient-to-r from-secondary via-accent to-primary bg-clip-text text-transparent leading-tight">
-              Мы создаём
+              We create
               <br />
-              невозможное
+              the impossible
             </h2>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-12">
-              Мощные 3D креативы для мобильных игр
+              Powerful 3D creatives for mobile games
             </p>
           </section>
 
@@ -96,23 +96,23 @@ const Index = () => {
             {[
               {
                 icon: "Trophy",
-                title: "Высшая лига графики",
+                title: "Top-Tier Graphics",
                 description:
-                  "Крутые 3D-креативы, которые на 47% чаще привлекают внимание пользователей, чем статичная реклама.",
+                  "Stunning 3D creatives that attract 47% more user attention than static ads.",
                 color: "primary",
               },
               {
                 icon: "Target",
-                title: "Фокус на конверсии",
+                title: "Conversion Focused",
                 description:
-                  'Мы не просто делаем "красиво". Мы продумываем каждый кадр так, чтобы подчеркнуть геймплей и спровоцировать действие — установку.',
+                  'We don\'t just make "pretty". We design every frame to highlight gameplay and drive action — installs.',
                 color: "secondary",
               },
               {
                 icon: "Gamepad2",
-                title: "Под ключ для любых жанров",
+                title: "Turnkey for Any Genre",
                 description:
-                  "От гиперказуала до сложных RPG. Мы глубоко погружаемся в механику вашей игры и находим самый убедительный визуальный язык.",
+                  "From hyper-casual to complex RPGs. We dive deep into your game mechanics and find the most compelling visual language.",
                 color: "accent",
               },
             ].map((feature, idx) => (
@@ -143,10 +143,10 @@ const Index = () => {
 
           <section className="text-center py-16 bg-gradient-to-r from-primary/5 via-secondary/5 to-accent/5 rounded-2xl border border-primary/20">
             <h3 className="text-3xl md:text-4xl font-bold mb-4 glow-magenta bg-gradient-to-r from-accent via-secondary to-primary bg-clip-text text-transparent">
-              Готовы создать что-то удивительное?
+              Ready to create something amazing?
             </h3>
             <p className="text-xl text-muted-foreground mb-8">
-              Напишите нам, и мы обсудим ваш проект
+              Contact us and let's discuss your project
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <button
@@ -154,7 +154,7 @@ const Index = () => {
                 className="group px-8 py-4 bg-gradient-to-r from-primary to-secondary text-background font-bold rounded-lg hover:scale-105 transition-all duration-300 hover:shadow-[0_0_40px_rgba(0,217,255,0.6)] flex items-center gap-3"
               >
                 <Icon name="Mail" size={20} />
-                Отправить заявку
+                Send Request
               </button>
               <a
                 href="https://t.me/TG_addG"
@@ -178,7 +178,7 @@ const Index = () => {
                 className="w-10 h-10 object-contain"
               />
               <span className="text-sm text-muted-foreground">
-                © 2024 TenderEx. Все права защищены.
+                © 2024 TenderEx. All rights reserved.
               </span>
             </div>
             <div className="flex gap-6">

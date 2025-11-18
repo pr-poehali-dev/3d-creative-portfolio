@@ -20,7 +20,7 @@ const About = () => {
                   Tenderex
                 </h1>
                 <p className="text-sm md:text-base text-muted-foreground mt-1">
-                  3D-креативы для мобильных игр
+                  3D Creatives for Mobile Games
                 </p>
               </div>
             </Link>
@@ -30,10 +30,10 @@ const About = () => {
                 to="/"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
-                Главная
+                Home
               </Link>
               <Link to="/about" className="text-primary font-semibold">
-                О нас
+                About
               </Link>
               <a
                 href="mailto:adtenderex@gmail.com"
@@ -42,7 +42,7 @@ const About = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300" />
                 <span className="relative flex items-center gap-2 text-primary font-semibold">
                   <Icon name="Mail" size={18} />
-                  Связаться
+                  Contact
                 </span>
               </a>
             </div>
@@ -52,12 +52,12 @@ const About = () => {
         <main className="container mx-auto px-6 py-16 max-w-5xl">
           <section className="mb-16 text-center animate-fade-in">
             <h2 className="text-5xl md:text-6xl font-bold mb-6 glow-purple bg-gradient-to-r from-secondary via-accent to-primary bg-clip-text text-transparent leading-tight">
-              Мы — фанаты 3D-графики
-              <br />и мобильного гейминга
+              We are fans of 3D graphics
+              <br />and mobile gaming
             </h2>
             <p className="text-2xl text-muted-foreground max-w-3xl mx-auto">
-              Наша миссия — помогать играм находить своих игроков с помощью силы
-              визуала
+              Our mission is to help games find their players through the power
+              of visuals
             </p>
           </section>
 
@@ -70,14 +70,14 @@ const About = () => {
                     <Icon name="Target" size={32} className="text-primary" />
                   </div>
                   <h3 className="text-3xl font-bold text-primary">
-                    Наша философия
+                    Our Philosophy
                   </h3>
                 </div>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Мы верим, что рекламный креатив — это не расходы, а
-                  инвестиция. Инвестиция в рост и узнаваемость вашего продукта.
-                  Поэтому в основе каждого нашего проекта лежит глубокий анализ
-                  и фокус на бизнес-задаче клиента.
+                  We believe that advertising creative is not an expense, but an
+                  investment. An investment in growth and recognition of your product.
+                  Therefore, every project is based on deep analysis
+                  and focus on the client's business objectives.
                 </p>
               </div>
             </section>
@@ -90,16 +90,16 @@ const About = () => {
                     <Icon name="Award" size={32} className="text-secondary" />
                   </div>
                   <h3 className="text-3xl font-bold text-secondary">
-                    Наш бэкграунд
+                    Our Background
                   </h3>
                 </div>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Мы не теоретики. Основатели студии — бывшие 3D-креаторы,
-                  которые своими руками создали сотни рекламных роликов для
-                  мобильных игр. Мы прошли весь путь от идеи до запуска кампании
-                  и знаем изнутри, какой креатив сработает в шумной ленте
-                  соцсетей, а какой — нет. Мы чувствуем тренды, потому что сами
-                  были их частью.
+                  We're not theorists. The studio founders are former 3D creators
+                  who have personally created hundreds of advertising videos for
+                  mobile games. We've walked the entire path from idea to campaign launch
+                  and know from the inside which creative will work in a noisy feed
+                  of social networks, and which won't. We feel trends because we
+                  were part of them.
                 </p>
               </div>
             </section>
@@ -112,12 +112,12 @@ const About = () => {
                     <Icon name="Cpu" size={32} className="text-accent" />
                   </div>
                   <h3 className="text-3xl font-bold text-accent">
-                    Наш технологический стэк
+                    Our Technology Stack
                   </h3>
                 </div>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                  Мы используем мощь современного пайплайна, чтобы работать
-                  быстро и без потерь в качестве:
+                  We use the power of a modern pipeline to work
+                  fast and without compromising quality:
                 </p>
                 <div className="flex flex-wrap gap-3">
                   {[
@@ -136,8 +136,8 @@ const About = () => {
                   ))}
                 </div>
                 <p className="text-lg text-muted-foreground leading-relaxed mt-4">
-                  Используем Unreal Engine 5 для молниеносного прототипирования
-                  и рендера сложнейших сцен.
+                  We use Unreal Engine 5 for lightning-fast prototyping
+                  and rendering of complex scenes.
                 </p>
               </div>
             </section>
@@ -145,37 +145,37 @@ const About = () => {
 
           <section className="mb-16">
             <h3 className="text-4xl font-bold mb-8 text-center glow-cyan bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Почему выбирают нас
+              Why Choose Us
             </h3>
             <div className="grid md:grid-cols-2 gap-6">
               {[
                 {
                   icon: "Users",
-                  title: "Создано креаторами для креаторов",
+                  title: "Created by Creators for Creators",
                   description:
-                    "Мы говорим с вами на одном языке и понимаем боль геймдев-маркетинга.",
+                    "We speak your language and understand the pain of gamedev marketing.",
                 },
                 {
                   icon: "Gamepad2",
-                  title: "Экспертиза в гейминге",
+                  title: "Gaming Expertise",
                   description:
-                    "Мы сами играем и понимаем, что цепляет игроков в разных жанрах.",
+                    "We play ourselves and understand what hooks players in different genres.",
                 },
                 {
                   icon: "Zap",
-                  title: "Технологический подход",
+                  title: "Technology Approach",
                   description:
-                    "Используем современный стэк программ, чтобы давать лучший результат быстрее.",
+                    "We use a modern software stack to deliver better results faster.",
                 },
                 {
                   icon: "Eye",
-                  title: "Прозрачность",
-                  description: "Вы всегда в курсе этапов работы.",
+                  title: "Transparency",
+                  description: "You are always aware of the work stages.",
                 },
                 {
                   icon: "TrendingUp",
-                  title: "Нацеленность на результат",
-                  description: "Наш успех — это ваш рост LTV и снижение CPI.",
+                  title: "Results-Driven",
+                  description: "Our success is your LTV growth and CPI reduction.",
                 },
               ].map((item, idx) => (
                 <div
@@ -205,17 +205,17 @@ const About = () => {
 
           <section className="text-center py-16 bg-gradient-to-r from-primary/5 via-secondary/5 to-accent/5 rounded-2xl border border-primary/20">
             <h3 className="text-3xl md:text-4xl font-bold mb-4 glow-magenta bg-gradient-to-r from-accent via-secondary to-primary bg-clip-text text-transparent">
-              Готовы начать работу?
+              Ready to get started?
             </h3>
             <p className="text-xl text-muted-foreground mb-8">
-              Свяжитесь с нами, и мы обсудим ваш проект
+              Contact us and let's discuss your project
             </p>
             <a
               href="mailto:adtenderex@gmail.com"
               className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-primary to-secondary text-background font-bold rounded-lg hover:scale-105 transition-all duration-300 hover:shadow-[0_0_40px_rgba(0,217,255,0.6)]"
             >
               <Icon name="Send" size={20} />
-              Написать нам
+              Contact Us
             </a>
           </section>
         </main>
@@ -229,7 +229,7 @@ const About = () => {
                 className="w-10 h-10 object-contain"
               />
               <span className="text-sm text-muted-foreground">
-                © 2024 TenderEx. Все права защищены.
+                © 2024 TenderEx. All rights reserved.
               </span>
             </div>
             <div className="flex gap-6">

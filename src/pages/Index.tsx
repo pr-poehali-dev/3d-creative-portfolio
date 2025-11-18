@@ -76,32 +76,17 @@ const Index = () => {
               <div className="absolute -inset-1 bg-gradient-to-r from-primary via-secondary to-accent rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-500 animate-glow-pulse" />
 
               <div className="relative bg-card border border-primary/20 rounded-2xl overflow-hidden">
-                <div className="aspect-video bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="mb-6">
-                      <div className="inline-flex items-center justify-center w-24 h-24 rounded-full bg-primary/10 border-2 border-primary/30 hover:border-primary hover:scale-110 transition-all duration-300 cursor-pointer group">
-                        <Icon
-                          name="Play"
-                          size={36}
-                          className="text-primary ml-1 group-hover:scale-125 transition-transform"
-                        />
-                      </div>
-                    </div>
-                    <h3 className="text-2xl font-bold mb-2 glow-cyan text-primary">
-                      Наше Портфолио
-                    </h3>
-                    <p className="text-muted-foreground">
-                      Загрузите ваше видео, чтобы продемонстрировать проекты
-                    </p>
-                    <div className="mt-6 flex flex-wrap gap-4 justify-center">
-                      <button className="px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(0,217,255,0.5)]">
-                        Загрузить видео
-                      </button>
-                      <button className="px-6 py-3 bg-secondary/10 border border-secondary text-secondary font-semibold rounded-lg hover:bg-secondary/20 transition-all duration-300 hover:scale-105">
-                        Вставить ссылку YouTube
-                      </button>
-                    </div>
-                  </div>
+                <div className="aspect-video">
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/k65aDf1SFV0"
+                    title="Tenderex Portfolio"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                    className="w-full h-full"
+                  />
                 </div>
               </div>
             </div>

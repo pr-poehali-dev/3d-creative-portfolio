@@ -148,6 +148,20 @@ const Index = () => {
             ))}
           </section>
 
+          <section className="mb-20 py-12 px-8 md:px-16 bg-gradient-to-br from-accent/10 via-secondary/5 to-primary/10 rounded-2xl border border-accent/20 animate-fade-in">
+            <div className="max-w-3xl mx-auto text-center">
+              <div className="inline-flex p-4 bg-accent/10 rounded-lg mb-6">
+                <Icon name="DollarSign" size={32} className="text-accent" />
+              </div>
+              <h3 className="text-3xl md:text-4xl font-bold mb-6 glow-magenta bg-gradient-to-r from-accent via-secondary to-primary bg-clip-text text-transparent">
+                Работаем с любым бюджетом
+              </h3>
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+                Мы знаем, что крутые креативы нужны и indie-студиям, и крупным компаниям. Поэтому предлагаем гибкие форматы сотрудничества: от одного вирального ролика до полного пакета креативов. Сфокусируемся на самой эффективной для вас задаче.
+              </p>
+            </div>
+          </section>
+
           <section className="text-center py-16 bg-gradient-to-r from-primary/5 via-secondary/5 to-accent/5 rounded-2xl border border-primary/20">
             <h3 className="text-3xl md:text-4xl font-bold mb-4 glow-magenta bg-gradient-to-r from-accent via-secondary to-primary bg-clip-text text-transparent">
               Ready to create something amazing?

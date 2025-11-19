@@ -154,10 +154,14 @@ const Index = () => {
                 <Icon name="DollarSign" size={32} className="text-accent" />
               </div>
               <h3 className="text-3xl md:text-4xl font-bold mb-6 glow-magenta bg-gradient-to-r from-accent via-secondary to-primary bg-clip-text text-transparent">
-                Работаем с любым бюджетом
+                We Work With Any Budget
               </h3>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                Мы знаем, что крутые креативы нужны и indie-студиям, и крупным компаниям. Поэтому предлагаем гибкие форматы сотрудничества: от одного вирального ролика до полного пакета креативов. Сфокусируемся на самой эффективной для вас задаче.
+                We know that awesome creatives are needed by both indie studios
+                and large companies. That's why we offer flexible cooperation
+                formats: from a single viral video to a full package of
+                creatives for a month. We'll focus on the most effective task
+                for you.
               </p>
             </div>
           </section>

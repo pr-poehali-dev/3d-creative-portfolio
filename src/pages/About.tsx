@@ -9,7 +9,10 @@ const About = () => {
       <div className="relative z-10">
         <header className="container mx-auto px-6 py-8">
           <nav className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <Link to="/" className="flex items-center gap-3 md:gap-6 animate-fade-in">
+            <Link
+              to="/"
+              className="flex items-center gap-3 md:gap-6 animate-fade-in"
+            >
               <img
                 src="https://cdn.poehali.dev/files/942a20c3-aa82-4fd6-ab72-0d07f7644ce0.png"
                 alt="TenderEx Logo"
@@ -41,7 +44,11 @@ const About = () => {
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300" />
                 <span className="relative flex items-center gap-2 text-primary font-semibold text-sm md:text-base">
-                  <Icon name="Mail" size={16} className="md:w-[18px] md:h-[18px]" />
+                  <Icon
+                    name="Mail"
+                    size={16}
+                    className="md:w-[18px] md:h-[18px]"
+                  />
                   Contact
                 </span>
               </a>
@@ -53,7 +60,8 @@ const About = () => {
           <section className="mb-16 text-center animate-fade-in">
             <h2 className="text-5xl md:text-6xl font-bold mb-6 glow-purple bg-gradient-to-r from-secondary via-accent to-primary bg-clip-text text-transparent leading-tight">
               We are fans of 3D graphics
-              <br />and mobile gaming
+              <br />
+              and mobile gaming
             </h2>
             <p className="text-2xl text-muted-foreground max-w-3xl mx-auto">
               Our mission is to help games find their players through the power
@@ -75,8 +83,8 @@ const About = () => {
                 </div>
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   We believe that advertising creative is not an expense, but an
-                  investment. An investment in growth and recognition of your product.
-                  Therefore, every project is based on deep analysis
+                  investment. An investment in growth and recognition of your
+                  product. Therefore, every project is based on deep analysis
                   and focus on the client's business objectives.
                 </p>
               </div>
@@ -94,12 +102,12 @@ const About = () => {
                   </h3>
                 </div>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  We're not theorists. The studio founders are former 3D creators
-                  who have personally created hundreds of advertising videos for
-                  mobile games. We've walked the entire path from idea to campaign launch
-                  and know from the inside which creative will work in a noisy feed
-                  of social networks, and which won't. We feel trends because we
-                  were part of them.
+                  We're not theorists. The studio founders are former 3D
+                  creators who have personally created hundreds of advertising
+                  videos for mobile games. We've walked the entire path from
+                  idea to campaign launch and know from the inside which
+                  creative will work in a noisy feed of social networks, and
+                  which won't. We feel trends because we were part of them.
                 </p>
               </div>
             </section>
@@ -116,8 +124,8 @@ const About = () => {
                   </h3>
                 </div>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                  We use the power of a modern pipeline to work
-                  fast and without compromising quality:
+                  We use the power of a modern pipeline to work fast and without
+                  compromising quality:
                 </p>
                 <div className="flex flex-wrap gap-3">
                   {[
@@ -136,8 +144,8 @@ const About = () => {
                   ))}
                 </div>
                 <p className="text-lg text-muted-foreground leading-relaxed mt-4">
-                  We use Unreal Engine 5 for lightning-fast prototyping
-                  and rendering of complex scenes.
+                  We use Unreal Engine 5 for lightning-fast prototyping and
+                  rendering of complex scenes.
                 </p>
               </div>
             </section>
@@ -175,7 +183,8 @@ const About = () => {
                 {
                   icon: "TrendingUp",
                   title: "Results-Driven",
-                  description: "Our success is your LTV growth and CPI reduction.",
+                  description:
+                    "Our success is your LTV growth and CPI reduction.",
                 },
               ].map((item, idx) => (
                 <div
@@ -229,7 +238,7 @@ const About = () => {
                 className="w-10 h-10 object-contain"
               />
               <span className="text-sm text-muted-foreground">
-                © 2024 TenderEx. All rights reserved.
+                © 2024 Tenderex. All rights reserved.
               </span>
             </div>
             <div className="flex gap-6">

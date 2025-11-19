@@ -19,7 +19,10 @@ const Index = () => {
       <div className="relative z-10">
         <header className="container mx-auto px-6 py-8">
           <nav className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <Link to="/" className="flex items-center gap-3 md:gap-6 animate-fade-in">
+            <Link
+              to="/"
+              className="flex items-center gap-3 md:gap-6 animate-fade-in"
+            >
               <img
                 src="https://cdn.poehali.dev/files/942a20c3-aa82-4fd6-ab72-0d07f7644ce0.png"
                 alt="Tenderex Logo"
@@ -51,7 +54,11 @@ const Index = () => {
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300" />
                 <span className="relative flex items-center gap-2 text-primary font-semibold text-sm md:text-base">
-                  <Icon name="Mail" size={16} className="md:w-[18px] md:h-[18px]" />
+                  <Icon
+                    name="Mail"
+                    size={16}
+                    className="md:w-[18px] md:h-[18px]"
+                  />
                   Contact
                 </span>
               </button>
@@ -178,7 +185,7 @@ const Index = () => {
                 className="w-10 h-10 object-contain"
               />
               <span className="text-sm text-muted-foreground">
-                © 2024 TenderEx. All rights reserved.
+                © 2024 Tenderex. All rights reserved.
               </span>
             </div>
             <div className="flex gap-6">

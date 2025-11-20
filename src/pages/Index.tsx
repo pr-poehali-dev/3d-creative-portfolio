@@ -80,7 +80,7 @@ const Index = () => {
 
           <section className="mb-20 flex justify-center">
             <div className="relative group w-full max-w-4xl">
-              <div className="absolute -inset-1 bg-gradient-to-r from-primary via-secondary to-accent rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-500 animate-glow-pulse" />
+              <div className="absolute -inset-1 bg-gradient-to-r from-primary via-secondary to-accent rounded-2xl blur-xl animate-glow-pulse" />
 
               <div className="relative bg-card border border-primary/20 rounded-2xl overflow-hidden">
                 <div className="aspect-video">

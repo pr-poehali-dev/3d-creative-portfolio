@@ -24,9 +24,9 @@ const Index = () => {
               className="flex items-center gap-3 md:gap-6 animate-fade-in"
             >
               <img
-                src="https://cdn.poehali.dev/projects/9193e91d-2324-4ed7-b25c-b0fab5d887e7/files/8113c4d8-4a4e-4a5f-a3f6-ac635fea8839.jpg"
+                src="https://cdn.poehali.dev/files/942a20c3-aa82-4fd6-ab72-0d07f7644ce0.png"
                 alt="Tenderex Logo"
-                className="w-12 h-12 md:w-16 md:h-16 object-contain animate-float rounded-lg"
+                className="w-12 h-12 md:w-16 md:h-16 object-contain animate-float"
               />
               <div>
                 <h1 className="text-2xl md:text-4xl font-bold glow-cyan bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
